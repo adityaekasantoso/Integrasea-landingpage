@@ -13,42 +13,43 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free NextJS Shadcn template.",
+    question: "Do you provide installation services?",
+    answer:
+      "Yes. Our team provides full on-site installation, configuration, testing, and handover documentation for AIS and CCTV systems.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "Can your system integrate with I-Motion DJPL?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Yes. We ensure that all installed systems are properly integrated with the I-Motion platform as required by DJPL regulations.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+    question: "How long does the installation process usually take?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "Installation time depends on site conditions and scope, but typically ranges from 3 to 10 days for standard deployments.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Do you offer warranty and after-sales support?",
+    answer:
+      "Absolutely. All equipment includes warranty, and our team provides remote and on-site support, including preventive maintenance.",
     value: "item-4",
   },
   {
-    question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+    question: "Is my data secure?",
+    answer:
+      "Yes. We implement secure network practices, encrypted connections, and controlled system access to protect all operational data.",
     value: "item-5",
   },
 ];
 
 export const FAQSection = () => {
   return (
-    <section id="faq" className="container md:w-[700px] py-24 sm:py-32">
+    <section id="faq" className="container md:w-[700px] py-14 sm:py-22">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          FAQS
+          FAQ
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
