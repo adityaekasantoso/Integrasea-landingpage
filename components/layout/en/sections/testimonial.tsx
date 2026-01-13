@@ -28,42 +28,50 @@ const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
     name: "Indra Saputra",
-    userName: "Harbor Operations Manager",
+    userName: "Port Operations Manager",
     comment:
-      "IntegraSea helps us monitor vessel movements in real time. Our team can make quicker decisions and significantly reduce collision risks around the port area.",
+      "Integrasea makes monitoring ship positions easy in real-time. Our team always knows the exact location of every vessel.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Rizky Pratama",
-    userName: "Port Authority Supervisor",
+    userName: "Harbor Supervisor",
     comment:
-      "The integrated AIS and CCTV system makes monitoring much easier. The dashboard is simple to use, yet the data is complete and highly accurate.",
+      "Integrasea integrates AIS and CCTV in a single dashboard. All information is clear and easily accessible for the team.",
     rating: 4.9,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Maria Angela",
-    userName: "Security & Surveillance Lead",
+    userName: "Head of Security & Monitoring",
     comment:
-      "With automated alerts, we detect suspicious activities much faster. The IntegraSea support team is responsive and very professional.",
+      "Integrasea provides automatic notifications for each vessel. This helps our team track ship movements quickly.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Budi Santoso",
-    userName: "Marine Safety Officer",
+    userName: "Maritime Safety Officer",
     comment:
-      "The platform improves navigation safety across our operational zones. Integration between weather data, vessel traffic, and CCTV records is extremely helpful during investigations.",
+      "Integrasea displays ship position data in real-time. Our team can make operational decisions faster.",
     rating: 4.8,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Nur Aisyah",
-    userName: "IT Manager",
+    name: "Dwi Hartanto",
+    userName: "Port Control Officer",
     comment:
-      "Deployment was smooth and well-planned. The system is stable, scalable, and meets the operational needs of our port very well.",
-    rating: 5.0,
+      "Integrasea enables faster team coordination. Ship positions are always visible clearly on the dashboard.",
+    rating: 4.7,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Siti Rahma",
+    userName: "Logistics Manager",
+    comment:
+      "Integrasea helps plan ship logistics more accurately. All ship position information is available in real-time.",
+    rating: 4.9,
   },
 ];
 

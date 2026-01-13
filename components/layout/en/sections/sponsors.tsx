@@ -41,13 +41,10 @@ const sponsors: SponsorItem[] = [
 
 export const SponsorsSection = () => {
   return (
-    <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
-      <h2 className="text-lg md:text-xl text-center mb-6">
-        Our Clients
-      </h2>
-
-      <div className="mx-auto">
+    <section id="sponsors" className="max-w-[75%] mx-auto sm:pb-32">
+      <div className="mx-auto mt-20">
         <Marquee
+
           className="gap-[3rem]"
           fade
           innerClassName="gap-[3rem]"

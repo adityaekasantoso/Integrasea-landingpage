@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,16 +19,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background", inter.className)}>
+      <body
+        className={cn(
+          "min-h-screen w-full bg-background overflow-x-hidden",
+          inter.className
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
+          {/* Navbar FIXED */}
           <Navbar />
 
-          {children}
+          {/* Wrapper konten */}
+          <div className="relative min-h-screen">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

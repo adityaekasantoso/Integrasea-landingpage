@@ -28,42 +28,50 @@ const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
     name: "Indra Saputra",
-    userName: "Manajer Operasional Pelabuhan",
+    userName: "Port Operations Manager",
     comment:
-      "IntegraSea membantu kami memantau pergerakan kapal secara real-time. Tim kami bisa mengambil keputusan lebih cepat dan risiko tabrakan di area pelabuhan bisa diminimalkan.",
+      "Integrasea memudahkan pemantauan posisi kapal secara real-time. Tim kami selalu tahu lokasi setiap kapal dengan akurat.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Rizky Pratama",
-    userName: "Supervisor Otoritas Pelabuhan",
+    userName: "Harbor Supervisor",
     comment:
-      "Sistem AIS dan CCTV terintegrasi membuat pemantauan jadi jauh lebih mudah. Dashboard mudah digunakan, data lengkap, dan sangat akurat.",
+      "Integrasea mengintegrasikan AIS dan CCTV dalam satu dashboard. Semua informasi tersaji jelas dan mudah diakses tim.",
     rating: 4.9,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Maria Angela",
-    userName: "Kepala Keamanan & Pengawasan",
+    userName: "Head of Security & Monitoring",
     comment:
-      "Dengan notifikasi otomatis, kami bisa mendeteksi aktivitas mencurigakan lebih cepat. Tim dukungan IntegraSea responsif dan sangat profesional.",
+      "Integrasea memberikan notifikasi otomatis untuk tiap kapal. Hal ini membantu tim memantau pergerakan kapal dengan cepat.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
     name: "Budi Santoso",
-    userName: "Petugas Keselamatan Maritim",
+    userName: "Maritime Safety Officer",
     comment:
-      "Platform ini meningkatkan keselamatan navigasi di zona operasional kami. Integrasi data cuaca, lalu lintas kapal, dan rekaman CCTV sangat membantu saat investigasi.",
+      "Integrasea menampilkan data posisi kapal secara real-time. Tim kami dapat membuat keputusan operasional lebih cepat.",
     rating: 4.8,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Nur Aisyah",
-    userName: "Manajer IT",
+    name: "Dwi Hartanto",
+    userName: "Port Control Officer",
     comment:
-      "Proses pemasangan berjalan lancar dan terencana dengan baik. Sistem stabil, mudah ditingkatkan, dan sangat memenuhi kebutuhan operasional pelabuhan kami.",
-    rating: 5.0,
+      "Integrasea memungkinkan koordinasi tim lebih cepat. Posisi kapal selalu terlihat dengan jelas di dashboard.",
+    rating: 4.7,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Siti Rahma",
+    userName: "Logistics Manager",
+    comment:
+      "Integrasea membantu perencanaan logistik kapal lebih tepat. Semua informasi posisi kapal dapat diakses secara real-time.",
+    rating: 4.9,
   },
 ];
 

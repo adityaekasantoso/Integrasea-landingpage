@@ -1,6 +1,9 @@
 "use client";
-import { ChevronsDown, Menu } from "lucide-react";
+
+import { Menu } from "lucide-react";
 import React from "react";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 import {
   Sheet,
   SheetContent,
@@ -45,6 +48,7 @@ export const Navbar = () => {
   const [isPortfolioOpen, setIsPortfolioOpen] = React.useState(false);
   const [language, setLanguage] = React.useState<"id" | "en">("id");
   const [mounted, setMounted] = React.useState(false);
+  const { theme } = useTheme();
 
   React.useEffect(() => {
     setMounted(true);
@@ -75,13 +79,20 @@ export const Navbar = () => {
 
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
-      {/* Logo */}
-      <div className="font-bold text-lg flex items-center cursor-default">
-        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        IntegraSea
+      <div className="flex items-center gap-3 cursor-default">
+        <Image
+          src={
+            theme === "dark"
+              ? "/logo-integrasea-white.png"
+              : "/logo-integrasea-black.png"
+          }
+          alt="IntegraSea"
+          width={150}
+          height={40}
+          className="h-7 w-auto object-contain"
+        />
       </div>
 
-      {/* Mobile Menu (hanya < lg) */}
       {mounted && (
         <div className="flex items-center lg:hidden gap-2">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -99,9 +110,18 @@ export const Navbar = () => {
               <div>
                 <SheetHeader className="mb-4 ml-4">
                   <SheetTitle className="flex items-center">
-                    <div className="flex items-center cursor-default">
-                      <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                      IntegraSea
+                    <div className="flex items-center gap-3 cursor-default">
+                      <Image
+                        src={
+                          theme === "dark"
+                            ? "/logo-integrasea-white.png"
+                            : "/logo-integrasea-black.png"
+                        }
+                        alt="IntegraSea"
+                        width={150}
+                        height={40}
+                        className="h-7 w-auto object-contain"
+                      />
                     </div>
                   </SheetTitle>
                 </SheetHeader>
@@ -129,7 +149,6 @@ export const Navbar = () => {
                     {language === "en" ? "Portfolio" : "Portofolio"}
                   </Button>
 
-                  {/* Tombol bahasa hanya di panel mobile */}
                   <Button
                     size="sm"
                     variant="outline"
@@ -150,7 +169,6 @@ export const Navbar = () => {
         </div>
       )}
 
-      {/* Desktop Navigation */}
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
           {routeList.map((route) => (
@@ -175,7 +193,6 @@ export const Navbar = () => {
         </NavigationMenuList>
       </NavigationMenu>
 
-      {/* Desktop Dark Mode + Language (hanya ≥ lg) */}
       {mounted && (
         <div className="hidden lg:flex items-center gap-2">
           <ToggleTheme />
@@ -185,7 +202,6 @@ export const Navbar = () => {
         </div>
       )}
 
-      {/* Portfolio Dialog */}
       <Dialog open={isPortfolioOpen} onOpenChange={setIsPortfolioOpen}>
         <DialogContent className="max-w-7xl w-full max-h-[90vh] overflow-y-auto">
           <DialogHeader className="mb-2">

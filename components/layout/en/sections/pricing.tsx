@@ -90,7 +90,6 @@ const plans: PlanProps[] = [
         unitPrice: "Rp 35,000,000",
         totalPrice: "Rp 35,000,000",
         notes: [
-          "ENC S-63 Nautical Chart",
           "AIS Monitoring Lite Software",
           "Mini PC with Monitor",
         ],
@@ -182,7 +181,6 @@ const plans: PlanProps[] = [
         unitPrice: "Rp 35,000,000",
         totalPrice: "Rp 35,000,000",
         notes: [
-          "ENC S-63 Nautical Chart",
           "AIS Monitoring Lite Software",
           "Mini PC with Monitor",
         ],
@@ -293,7 +291,7 @@ const plans: PlanProps[] = [
         qty: "1 Set",
         unitPrice: "Rp 85,000,000",
         totalPrice: "Rp 85,000,000",
-        notes: ["ENC S-63 Nautical Chart", "Navi Pro Port Watch Software"],
+        notes: ["Navi Pro Port Watch Software"],
       },
       {
         no: 3,
@@ -439,7 +437,7 @@ export const PricingSection = () => {
                   <Button className="w-full">{plan.buttonText}</Button>
                 </DialogTrigger>
 
-                <DialogContent className="max-w-4xl">
+                <DialogContent className="max-w-5xl">
                   <DialogHeader>
                     <DialogTitle>{plan.title} Price Details</DialogTitle>
                   </DialogHeader>
