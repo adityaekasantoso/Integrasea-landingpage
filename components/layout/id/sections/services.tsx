@@ -14,25 +14,25 @@ const serviceList: ServiceProps[] = [
     icon: "Satellite",
     title: "AIS Receiver",
     description: "AIS Receiver AMEC R150GE yang andal dengan power industrial dan rak 4U.",
-    image: "https://integrasea.com/images/1024/14014632/AISSet.jpeg",
+    image: "/ais-receiver.png",
   },
   {
     icon: "Cctv",
     title: "PTZ CCTV & NVR",
     description: "PTZ CCTV siang & malam untuk pemantauan terminal dengan rekaman 1 tahun.",
-    image: "https://integrasea.com/images/976/14114303/WhatsAppImage2025-01-26at5.52.08AM.jpeg",
+    image: "/cctv.png",
   },
   {
     icon: "Eye",
     title: "CCTV Jarak Jauh",
     description: "CCTV dengan jangkauan hingga 10 NM untuk keamanan dan pengawasan lebih maksimal.",
-    image: "https://integrasea.com/images/976/14114388/WhatsAppImage2025-02-14at7.18.45PM.jpeg",
+    image: "/long-range-cctv.png",
   },
   {
     icon: "Unplug",
     title: "Integrasi I-Motion",
     description: "Integrasi mulus dengan I-Motion DJPL tanpa biaya langganan tambahan.",
-    image: "https://integrasea.com/images/976/14015264/Screenshot2025-02-11at10.47.16PM.png",
+    image: "/i-motion.png",
   },
 ];
 
