@@ -14,25 +14,25 @@ const serviceList: ServiceProps[] = [
     icon: "Satellite",
     title: "AIS Receiver",
     description: "Reliable AMEC R150GE AIS Receiver with industrial power and 4U rack.",
-    image: "https://integrasea.com/images/1024/14014632/AISSet.jpeg",
+    image: "/ais-receiver.png",
   },
   {
     icon: "Cctv",
     title: "PTZ CCTV, NVR",
     description: "Day & Night PTZ CCTV for terminal monitoring with 1-year recording.",
-    image: "https://integrasea.com/images/976/14114303/WhatsAppImage2025-01-26at5.52.08AM.jpeg",
+    image: "/cctv.png",
   },
   {
     icon: "Eye",
     title: "Long Range CCTV",
     description: "CCTV coverage up to 10 NM for enhanced security and surveillance.",
-    image: "https://integrasea.com/images/976/14114388/WhatsAppImage2025-02-14at7.18.45PM.jpeg",
+    image: "/long-range-cctv.png",
   },
   {
     icon: "Unplug",
     title: "I-Motion Integration",
     description: "Seamless integration with I-Motion DJPL, no subscription fees.",
-    image: "https://integrasea.com/images/976/14015264/Screenshot2025-02-11at10.47.16PM.png",
+    image: "/i-motion.png",
   },
 ];
 

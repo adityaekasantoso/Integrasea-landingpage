@@ -202,128 +202,121 @@ export const Navbar = () => {
         </div>
       )}
 
-      <Dialog open={isPortfolioOpen} onOpenChange={setIsPortfolioOpen}>
-        <DialogContent className="max-w-7xl w-full max-h-[90vh] overflow-y-auto">
-          <DialogHeader className="mb-2">
-            <DialogTitle className="text-xl font-bold">
-              {language === "en" ? "Portfolio" : "Portofolio"}
-            </DialogTitle>
-          </DialogHeader>
+     <Dialog open={isPortfolioOpen} onOpenChange={setIsPortfolioOpen}>
+  <DialogContent
+    className="
+      w-full
+      max-w-5xl
+      h-[90vh]
+      overflow-y-auto
+      overflow-x-hidden
+      rounded-lg
+      p-6
+      mx-auto
+    "
+  >
+    <DialogHeader className="mb-4">
+      <DialogTitle className="text-xl font-bold text-center">
+        {language === "en" ? "Portfolio" : "Portofolio"}
+      </DialogTitle>
+    </DialogHeader>
 
-          <div className="flex-1 space-y-6">
-            <p className="text-base leading-relaxed">
-              {language === "en"
-                ? "MultiIntegra Technology Group is a leading ICT System Integrator and Solution Provider, trusted for delivering end-to-end, high-performance technology solutions. Our strength lies in a team of over 100 qualified technicians and more than 25 certified, well-trained engineers supported by a modern R&D center, advanced testing facilities, and in-house software development capabilities."
-                : "MultiIntegra Technology Group adalah integrator sistem ICT terkemuka dan penyedia solusi, dipercaya dalam menyediakan solusi teknologi menyeluruh dan berkinerja tinggi. Kekuatan kami terletak pada tim lebih dari 100 teknisi berkualifikasi dan lebih dari 25 insinyur bersertifikat, didukung pusat R&D modern, fasilitas pengujian canggih, dan kemampuan pengembangan perangkat lunak internal."}
-            </p>
+    <div className="flex flex-col space-y-6">
+      <p className="text-base leading-relaxed text-justify">
+        {language === "en"
+          ? "MultiIntegra Technology Group is a leading ICT System Integrator and Solution Provider, trusted for delivering end-to-end, high-performance technology solutions. Our strength lies in a team of over 100 qualified technicians and more than 25 certified, well-trained engineers supported by a modern R&D center, advanced testing facilities, and in-house software development capabilities."
+          : "MultiIntegra Technology Group adalah integrator sistem ICT terkemuka dan penyedia solusi, dipercaya dalam menyediakan solusi teknologi menyeluruh dan berkinerja tinggi. Kekuatan kami terletak pada tim lebih dari 100 teknisi berkualifikasi dan lebih dari 25 insinyur bersertifikat, didukung pusat R&D modern, fasilitas pengujian canggih, dan kemampuan pengembangan perangkat lunak internal."}
+      </p>
 
-            <div>
-              <p className="font-semibold mb-2">
-                {language === "en"
-                  ? "Our group includes:"
-                  : "Grup kami mencakup:"}
-              </p>
-              <ul className="list-disc list-inside space-y-1">
-                <li>PT MultiIntegra</li>
-                <li>PT Panorama Graha Teknologi</li>
-                <li>PT MultiIntegra Digital</li>
-                <li>PT MultiIntegra Medika</li>
-              </ul>
-            </div>
+      <div>
+        <p className="font-semibold mb-2">
+          {language === "en" ? "Our group includes:" : "Grup kami mencakup:"}
+        </p>
+        <ul className="list-disc list-inside space-y-1">
+          <li>PT MultiIntegra</li>
+          <li>PT Panorama Graha Teknologi</li>
+          <li>PT MultiIntegra Digital</li>
+          <li>PT MultiIntegra Medika</li>
+        </ul>
+      </div>
 
-            <p className="text-base leading-relaxed">
-              {language === "en"
-                ? "We bring together innovation, technical precision, and local expertise to deliver integrated solutions that meet the evolving needs of businesses across industries."
-                : "Kami memadukan inovasi, presisi teknis, dan keahlian lokal untuk menghadirkan solusi terintegrasi yang memenuhi kebutuhan bisnis yang terus berkembang di berbagai industri."}
-            </p>
+      <p className="text-base leading-relaxed text-justify">
+        {language === "en"
+          ? "We bring together innovation, technical precision, and local expertise to deliver integrated solutions that meet the evolving needs of businesses across industries."
+          : "Kami memadukan inovasi, presisi teknis, dan keahlian lokal untuk menghadirkan solusi terintegrasi yang memenuhi kebutuhan bisnis yang terus berkembang di berbagai industri."}
+      </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 text-center">
-              <div className="p-4 bg-secondary/10 rounded-lg">
-                <p className="text-2xl font-bold">2005</p>
-                <p className="text-sm">
-                  {language === "en" ? "Year Established" : "Tahun Berdiri"}
-                </p>
-              </div>
-              <div className="p-4 bg-secondary/10 rounded-lg">
-                <p className="text-2xl font-bold">350+</p>
-                <p className="text-sm">
-                  {language === "en"
-                    ? "Total Installations"
-                    : "Total Instalasi"}
-                </p>
-              </div>
-              <div className="p-4 bg-secondary/10 rounded-lg">
-                <p className="text-2xl font-bold">120+</p>
-                <p className="text-sm">
-                  {language === "en" ? "Major Projects" : "Proyek Utama"}
-                </p>
-              </div>
-              <div className="p-4 bg-secondary/10 rounded-lg">
-                <p className="text-2xl font-bold">100+</p>
-                <p className="text-sm">
-                  {language === "en"
-                    ? "Professional Staff"
-                    : "Staf Profesional"}
-                </p>
-              </div>
-            </div>
-
-            <div className="overflow-auto mt-6">
-              <img
-                src="/project-site.png"
-                alt="Project Overview"
-                className="w-full h-auto rounded-lg border border-secondary"
-              />
-            </div>
-
-            <div className="mt-6 text-center">
-              <p className="font-semibold mb-2">
-                {language === "en" ? "Project Gallery" : "Galeri Proyek"}
-              </p>
-              <div className="flex overflow-x-auto space-x-4 py-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
-                {Array.from({ length: 8 }).map((_, i) => (
-                  <img
-                    key={i}
-                    src="/project-site.png"
-                    alt={`Project ${i + 1}`}
-                    className="w-64 h-40 object-cover rounded-lg border border-secondary flex-shrink-0"
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="mt-8 text-center">
-              <p className="font-semibold mb-4 text-lg">
-                {language === "en" ? "Our Customers" : "Pelanggan Kami"}
-              </p>
-              <div className="flex justify-center space-x-8 overflow-x-auto py-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
-                {[
-                  "adaro",
-                  "bayan",
-                  "dishub",
-                  "harita",
-                  "indonesiapower",
-                  "neo",
-                  "sumbawajutaraya",
-                ].map((logo) => (
-                  <img
-                    key={logo}
-                    src={`/logos/${logo}.png`}
-                    alt={logo}
-                    className="h-12 object-contain"
-                  />
-                ))}
-              </div>
-            </div>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 text-center">
+        {[
+          { value: "2005", label: language === "en" ? "Year Established" : "Tahun Berdiri" },
+          { value: "350+", label: language === "en" ? "Total Installations" : "Total Instalasi" },
+          { value: "120+", label: language === "en" ? "Major Projects" : "Proyek Utama" },
+          { value: "100+", label: language === "en" ? "Professional Staff" : "Staf Profesional" },
+        ].map((item, i) => (
+          <div key={i} className="p-4 bg-secondary/10 rounded-lg">
+            <p className="text-2xl font-bold">{item.value}</p>
+            <p className="text-sm">{item.label}</p>
           </div>
+        ))}
+      </div>
 
-          <DialogFooter className="mt-6">
-            <Button onClick={() => setIsPortfolioOpen(false)}>
-              {language === "en" ? "Close" : "Tutup"}
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+      <div className="overflow-hidden rounded-lg border border-secondary">
+        <img
+          src="/project-site.png"
+          alt="Project Overview"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+      <div>
+        <p className="font-semibold mb-2 text-center">
+          {language === "en" ? "Project Gallery" : "Galeri Proyek"}
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <img
+              key={i}
+              src="/project-site.png"
+              alt={`Project ${i + 1}`}
+              className="w-full h-40 object-cover rounded-lg border border-secondary"
+            />
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <p className="font-semibold mb-4 text-lg text-center">
+          {language === "en" ? "Our Customers" : "Pelanggan Kami"}
+        </p>
+        <div className="flex flex-wrap justify-center gap-6">
+          {[
+            "adaro",
+            "bayan",
+            "dishub",
+            "harita",
+            "indonesiapower",
+            "neo",
+            "sumbawajutaraya",
+          ].map((logo) => (
+            <img
+              key={logo}
+              src={`/logos/${logo}.png`}
+              alt={logo}
+              className="h-12 object-contain"
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <DialogFooter className="mt-6 flex justify-center">
+      <Button onClick={() => setIsPortfolioOpen(false)}>
+        {language === "en" ? "Close" : "Tutup"}
+      </Button>
+    </DialogFooter>
+  </DialogContent>
+</Dialog>
+
     </header>
   );
 };
