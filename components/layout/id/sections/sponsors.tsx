@@ -50,10 +50,7 @@ export const SponsorsSection = () => {
           pauseOnHover
         >
           {sponsors.map(({ logo, name }) => (
-            <div
-              key={name}
-              className="flex items-center gap-4 md:gap-6"
-            >
+            <div key={name} className="flex items-center gap-4 md:gap-6">
               <img
                 src={logo}
                 alt={name}

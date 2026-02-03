@@ -154,7 +154,7 @@ const plans: PlanProps[] = [
     popular: 1,
     price: 199900000,
     description:
-      "Paket lengkap AIS Monitoring dan sistem pengawasan untuk kebutuhan pemantauan maritim dan keamanan area, termasuk kamera PTZ, CCTV, internet, instalasi, dan pengiriman.",
+      "Paket lengkap AIS Monitoring dan sistem pengawasan untuk kebutuhan pemantauan maritim dan keamanan area, termasuk kamera PTZ CCTV, internet, instalasi, dan pengiriman.",
     buttonText: "Detail",
     benefitList: [
       "AIS Network Receiver AMEC R150GE",
@@ -265,7 +265,7 @@ const plans: PlanProps[] = [
     popular: 1,
     price: 267700000,
     description:
-      "Paket Advance untuk kebutuhan pemantauan maritim dan keamanan tingkat lanjut, dilengkapi AIS profesional, sistem rekaman, kamera PTZ, CCTV, perangkat pendukung lengkap, serta opsi koneksi internet satelit.",
+      "Paket Advance untuk kebutuhan pemantauan maritim dan keamanan tingkat lanjut, dilengkapi AIS profesional, sistem rekaman, kamera PTZ CCTV, perangkat pendukung lengkap, serta opsi koneksi internet satelit.",
     buttonText: "Detail",
     benefitList: [
       "AIS Network Receiver AMEC R150GE",

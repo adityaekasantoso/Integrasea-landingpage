@@ -9,12 +9,14 @@ import { TestimonialSection } from "@/components/layout/id/sections/testimonial"
 
 export const metadata = {
   title: "Integrasea - Platform Pemantauan AIS & CCTV",
-  description: "Integrasea menyediakan AIS Receiver, CCTV untuk pemantauan pelabuhan sesuai peraturan DJPL, serta platform pemantauan kapal secara real-time.",
+  description:
+    "Integrasea menyediakan AIS Receiver, CCTV untuk pemantauan pelabuhan sesuai peraturan DJPL, serta platform pemantauan kapal secara real-time.",
   openGraph: {
     type: "website",
     url: "https://integrasea.example.com",
     title: "Integrasea - Platform Pemantauan AIS & CCTV",
-    description: "Integrasea menyediakan AIS Receiver, CCTV untuk pemantauan pelabuhan sesuai peraturan DJPL, serta platform pemantauan kapal secara real-time.",
+    description:
+      "Integrasea menyediakan AIS Receiver, CCTV untuk pemantauan pelabuhan sesuai peraturan DJPL, serta platform pemantauan kapal secara real-time.",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
@@ -28,7 +30,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "https://integrasea.example.com",
     title: "Integrasea - Platform Pemantauan AIS & CCTV",
-    description: "Integrasea menyediakan AIS Receiver, CCTV untuk pemantauan pelabuhan sesuai peraturan DJPL, serta platform pemantauan kapal secara real-time.",
+    description:
+      "Integrasea menyediakan AIS Receiver, CCTV untuk pemantauan pelabuhan sesuai peraturan DJPL, serta platform pemantauan kapal secara real-time.",
     images: [
       "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
     ],

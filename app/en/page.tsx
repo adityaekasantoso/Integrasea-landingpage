@@ -9,12 +9,14 @@ import { TestimonialSection } from "@/components/layout/en/sections/testimonial"
 
 export const metadata = {
   title: "Integrasea - AIS & CCTV Monitoring Platform",
-  description: "Integrasea menyediakan AIS Receiver, CCTV port monitoring sesuai peraturan DJPL, dan platform pemantauan kapal real-time.",
+  description:
+    "Integrasea menyediakan AIS Receiver, CCTV port monitoring sesuai peraturan DJPL, dan platform pemantauan kapal real-time.",
   openGraph: {
     type: "website",
     url: "https://integrasea.example.com",
     title: "Integrasea - AIS & CCTV Monitoring Platform",
-    description: "Integrasea menyediakan AIS Receiver, CCTV port monitoring sesuai peraturan DJPL, dan platform pemantauan kapal real-time.",
+    description:
+      "Integrasea menyediakan AIS Receiver, CCTV port monitoring sesuai peraturan DJPL, dan platform pemantauan kapal real-time.",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
@@ -28,7 +30,8 @@ export const metadata = {
     card: "summary_large_image",
     site: "https://integrasea.example.com",
     title: "Integrasea - AIS & CCTV Monitoring Platform",
-    description: "Integrasea menyediakan AIS Receiver, CCTV port monitoring sesuai peraturan DJPL, dan platform pemantauan kapal real-time.",
+    description:
+      "Integrasea menyediakan AIS Receiver, CCTV port monitoring sesuai peraturan DJPL, dan platform pemantauan kapal real-time.",
     images: [
       "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
     ],
@@ -38,16 +41,14 @@ export const metadata = {
 export default function HomeEn() {
   return (
     <>
-      <HeroSection
-      />
+      <HeroSection />
       <SponsorsSection />
       <ServicesSection />
       <FeaturesSection />
       <TestimonialSection />
       <PricingSection />
       <FAQSection />
-      <FooterSection
-      />
+      <FooterSection />
     </>
   );
 }

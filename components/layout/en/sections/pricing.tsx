@@ -89,10 +89,7 @@ const plans: PlanProps[] = [
         qty: "1 Set",
         unitPrice: "Rp 35,000,000",
         totalPrice: "Rp 35,000,000",
-        notes: [
-          "AIS Monitoring Lite Software",
-          "Mini PC with Monitor",
-        ],
+        notes: ["AIS Monitoring Lite Software", "Mini PC with Monitor"],
       },
       {
         no: 3,
@@ -180,10 +177,7 @@ const plans: PlanProps[] = [
         qty: "1 Set",
         unitPrice: "Rp 35,000,000",
         totalPrice: "Rp 35,000,000",
-        notes: [
-          "AIS Monitoring Lite Software",
-          "Mini PC with Monitor",
-        ],
+        notes: ["AIS Monitoring Lite Software", "Mini PC with Monitor"],
       },
       {
         no: 3,

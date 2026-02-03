@@ -44,17 +44,13 @@ export const SponsorsSection = () => {
     <section id="sponsors" className="max-w-[75%] mx-auto sm:pb-32">
       <div className="mx-auto mt-20">
         <Marquee
-
           className="gap-[3rem]"
           fade
           innerClassName="gap-[3rem]"
           pauseOnHover
         >
           {sponsors.map(({ logo, name }) => (
-            <div
-              key={name}
-              className="flex items-center gap-4 md:gap-6"
-            >
+            <div key={name} className="flex items-center gap-4 md:gap-6">
               <img
                 src={logo}
                 alt={name}

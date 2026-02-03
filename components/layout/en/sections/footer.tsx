@@ -85,8 +85,8 @@ export const FooterSection = () => {
         <Separator className="my-6" />
 
         <section className="text-center text-sm opacity-80">
-          &copy; {currentYear}{" "}
-          <span className="font-semibold">Integrasea</span>. All rights reserved.
+          &copy; {currentYear} <span className="font-semibold">Integrasea</span>
+          . All rights reserved.
         </section>
       </div>
     </section>

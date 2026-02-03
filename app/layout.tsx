@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen w-full bg-background overflow-x-hidden",
-          inter.className
+          inter.className,
         )}
       >
         <ThemeProvider
@@ -35,9 +35,7 @@ export default function RootLayout({
           <Navbar />
 
           {/* Wrapper konten */}
-          <div className="relative min-h-screen">
-            {children}
-          </div>
+          <div className="relative min-h-screen">{children}</div>
         </ThemeProvider>
       </body>
     </html>

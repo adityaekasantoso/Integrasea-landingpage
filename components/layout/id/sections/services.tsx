@@ -13,25 +13,29 @@ const serviceList: ServiceProps[] = [
   {
     icon: "Satellite",
     title: "AIS Receiver",
-    description: "AIS Receiver AMEC R150GE yang andal dengan power industrial dan rak 4U.",
+    description:
+      "AIS Receiver AMEC R150GE yang andal dengan setandar industrial.",
     image: "/ais-receiver.png",
   },
   {
     icon: "Cctv",
     title: "PTZ CCTV & NVR",
-    description: "PTZ CCTV siang & malam untuk pemantauan terminal dengan rekaman 1 tahun.",
+    description:
+      "PTZ CCTV siang & malam untuk pemantauan pelabuhan.",
     image: "/cctv.png",
   },
   {
     icon: "Eye",
     title: "CCTV Jarak Jauh",
-    description: "CCTV dengan jangkauan hingga 10 NM untuk keamanan dan pengawasan lebih maksimal.",
+    description:
+      "CCTV dengan jangkauan hingga 10 NM untuk keamanan dan pengawasan lebih maksimal.",
     image: "/long-range-cctv.png",
   },
   {
     icon: "Unplug",
     title: "Integrasi I-Motion",
-    description: "Integrasi mulus dengan I-Motion DJPL tanpa biaya langganan tambahan.",
+    description:
+      "Integrasi mulus dengan I-Motion DJPL tanpa biaya langganan tambahan.",
     image: "/i-motion.png",
   },
 ];
@@ -41,16 +45,16 @@ export const ServicesSection = () => {
     <section id="services" className="container py-14 sm:py-22">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">
-            Layanan
-          </h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">Layanan</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Layanan Terintegrasi untuk Operasional Pelabuhan Modern
           </h2>
 
           <p className="text-xl text-muted-foreground mb-8">
-            Kami menyediakan solusi AIS dan CCTV yang dirancang untuk meningkatkan visibilitas, keamanan, dan efisiensi operasional semua dalam satu platform terpadu.
+            Kami menyediakan solusi AIS dan CCTV yang dirancang untuk
+            meningkatkan visibilitas, keamanan, dan efisiensi operasional semua
+            dalam satu platform terpadu.
           </p>
         </div>
 

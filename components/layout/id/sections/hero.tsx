@@ -16,6 +16,9 @@ const heroImages = {
     "/4-light.png",
     "/5-light.png",
     "/6-light.png",
+    "/7-light.png",
+    "/8-light.png",
+    "/9-light.png",
   ],
   dark: [
     "/1-dark.png",
@@ -24,6 +27,9 @@ const heroImages = {
     "/4-dark.png",
     "/5-dark.png",
     "/6-dark.png",
+    "/7-dark.png",
+    "/8-dark.png",
+    "/9-dark.png",
   ],
 };
 
@@ -71,14 +77,19 @@ export const HeroSection = () => {
               secara real-time dengan sistem monitoring terintegrasi.
             </p>
 
-            <Button className="font-bold bg-slate-900 dark:bg-slate-100 text-white dark:text-black hover:bg-slate-800 dark:hover:bg-slate-200 group/arrow">
+            <Button
+              onClick={() =>
+                window.open("https://wa.me/628118801117", "_blank")
+              }
+              className="font-bold bg-slate-900 dark:bg-slate-100 text-white dark:text-black hover:bg-slate-800 dark:hover:bg-slate-200 group/arrow"
+            >
               Jadwalkan Konsultasi
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
             </Button>
           </div>
 
           <div className="relative group mt-14 w-full flex flex-col items-center">
-            <div className="relative w-full md:w-[1200px] h-[250px] md:h-[600px]">
+            <div className="relative w-full md:w-[1200px] h-[250px] md:h-[655px]">
               <div className="absolute inset-0 rounded-xl bg-black shadow-xs border-8 border-black dark:border-gray-300 overflow-hidden">
                 {images.map((src, index) => (
                   <Image
@@ -89,7 +100,7 @@ export const HeroSection = () => {
                     priority={index === 0}
                     className={cn(
                       "absolute inset-0 object-cover object-top transition-opacity duration-1000 ease-in-out",
-                      index === currentIndex ? "opacity-100" : "opacity-0"
+                      index === currentIndex ? "opacity-100" : "opacity-0",
                     )}
                   />
                 ))}
