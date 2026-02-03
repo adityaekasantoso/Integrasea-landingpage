@@ -61,7 +61,7 @@ const plans: PlanProps[] = [
   {
     key: "basic",
     title: "Paket Basic AIS Receiver",
-    popular: 0,
+    popular: 1,
     price: 119900000,
     description:
       "Paket Basic AIS Receiver untuk kebutuhan pemantauan kapal dengan sistem sederhana, hemat biaya, dan mudah diimplementasikan, termasuk perangkat AIS, software monitoring, koneksi internet, instalasi, dan pengiriman.",
@@ -158,7 +158,6 @@ const plans: PlanProps[] = [
     buttonText: "Detail",
     benefitList: [
       "AIS Network Receiver AMEC R150GE",
-      "AIS Monitoring Software + ENC S-63",
       "Kamera PTZ Outdoor HIKVISION IP66",
       "Sistem CCTV (NVR + Storage)",
       "Mini PC & Monitor Monitoring",
@@ -269,7 +268,6 @@ const plans: PlanProps[] = [
     buttonText: "Detail",
     benefitList: [
       "AIS Network Receiver AMEC R150GE",
-      "Software AIS Profesional (ENC S-63)",
       "PC Monitoring Performa Tinggi",
       "Kamera PTZ Outdoor IP66",
       "Sistem CCTV dengan Kapasitas Besar",

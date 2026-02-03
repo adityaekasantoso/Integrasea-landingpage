@@ -61,7 +61,7 @@ const plans: PlanProps[] = [
   {
     key: "basic",
     title: "Basic AIS Receiver Package",
-    popular: 0,
+    popular: 1,
     price: 119900000,
     description:
       "Basic AIS Receiver package designed for vessel monitoring with a simple system, cost-efficient, and easy to implement, including AIS devices, monitoring software, internet connection, installation, and delivery.",
@@ -154,7 +154,6 @@ const plans: PlanProps[] = [
     buttonText: "View Details",
     benefitList: [
       "AIS Network Receiver AMEC R150GE",
-      "AIS Monitoring Software + ENC S-63",
       "Outdoor PTZ Camera HIKVISION IP66",
       "CCTV System (NVR + Storage)",
       "Mini PC & Monitoring Display",
