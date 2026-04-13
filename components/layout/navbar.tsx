@@ -3,7 +3,6 @@
 import { Menu } from "lucide-react";
 import React from "react";
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import {
   Sheet,
   SheetContent,
@@ -20,7 +19,6 @@ import {
   NavigationMenuList,
 } from "../ui/navigation-menu";
 import { Button } from "../ui/button";
-import { ToggleTheme } from "./toogle-theme";
 
 interface RouteProps {
   href: string;
@@ -40,7 +38,6 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [language, setLanguage] = React.useState<"id" | "en">("id");
   const [mounted, setMounted] = React.useState(false);
-  const { theme } = useTheme();
 
   React.useEffect(() => {
     setMounted(true);
@@ -72,11 +69,7 @@ export const Navbar = () => {
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <div className="flex items-center gap-3 cursor-default">
         <Image
-          src={
-            theme === "dark"
-              ? "/logo-integrasea-white.png"
-              : "/logo-integrasea-black.png"
-          }
+          src="/logo-integrasea-black.png"
           alt="IntegraSea"
           width={150}
           height={40}
@@ -102,11 +95,7 @@ export const Navbar = () => {
                 <SheetHeader className="mb-4 ml-4">
                   <SheetTitle className="flex items-center">
                     <Image
-                      src={
-                        theme === "dark"
-                          ? "/logo-integrasea-white.png"
-                          : "/logo-integrasea-black.png"
-                      }
+                      src="/logo-integrasea-black.png"
                       alt="IntegraSea"
                       width={150}
                       height={40}
@@ -145,7 +134,6 @@ export const Navbar = () => {
 
               <SheetFooter className="flex-col sm:flex-col justify-start items-start">
                 <Separator className="mb-2" />
-                <ToggleTheme />
               </SheetFooter>
             </SheetContent>
           </Sheet>
@@ -168,7 +156,6 @@ export const Navbar = () => {
 
       {mounted && (
         <div className="hidden lg:flex items-center gap-2">
-          <ToggleTheme />
           <Button size="sm" variant="outline" onClick={handleLanguageToggle}>
             {language.toUpperCase()}
           </Button>

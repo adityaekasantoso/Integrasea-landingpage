@@ -20,8 +20,7 @@ const serviceList: ServiceProps[] = [
   {
     icon: "Cctv",
     title: "PTZ CCTV & NVR",
-    description:
-      "PTZ CCTV siang & malam untuk pemantauan pelabuhan.",
+    description: "PTZ CCTV siang & malam untuk pemantauan pelabuhan.",
     image: "/cctv.png",
   },
   {
@@ -62,7 +61,7 @@ export const ServicesSection = () => {
           {serviceList.map(({ icon, title, description, image }, index) => (
             <Card
               key={title}
-              className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
+              className="bg-muted/50 hover:bg-background transition-all delay-75 group/number"
             >
               <div className="overflow-hidden rounded-t-lg h-40 relative">
                 <img

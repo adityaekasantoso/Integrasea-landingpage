@@ -13,37 +13,37 @@ const featureList: FeaturesProps[] = [
     icon: "Radar",
     title: "Real-Time Vessel Tracking",
     description:
-      "Track vessel positions live on the map, complete with course, speed, and identification data.",
+      "View vessel positions live on the map, including heading, speed, and vessel identity.",
   },
   {
     icon: "Cctv",
     title: "Integrated CCTV Monitoring",
     description:
-      "Real-time monitoring of port areas through high-quality CCTV streams, accessible from anywhere.",
+      "Monitor port areas in real-time with high-quality CCTV, accessible from anywhere.",
   },
   {
     icon: "MapPin",
-    title: "Guardzone Alerts",
+    title: "Safe Zone Alerts",
     description:
-      "Set up custom guardzones and receive instant alerts when vessels enter or leave these areas.",
+      "Create custom safety zones and receive instant notifications when vessels enter or leave the area.",
   },
   {
     icon: "History",
-    title: "Route Playback",
+    title: "Playback Movement History",
     description:
-      "Replay previous vessel movements on the map for operational review and planning.",
+      "Review past vessel routes on the map for analysis and operational planning.",
   },
   {
     icon: "FileText",
-    title: "History Data",
+    title: "Vessel Activity Data",
     description:
-      "Access detailed logs of vessel activity and operational events for analysis and reporting.",
+      "Access vessel activity logs and operational events for reporting and analysis.",
   },
   {
     icon: "UserCheck",
-    title: "Simple Role Management",
+    title: "Easy Role Management",
     description:
-      "Admins manage system settings, while Users handle monitoring and operations.",
+      "Admins manage the system, while users focus on daily monitoring and operations.",
   },
 ];
 
@@ -55,12 +55,12 @@ export const FeaturesSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Designed for Reliable Vessel Monitoring
+        Everything You Need to Monitor Vessels
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        A complete AIS and CCTV platform that improves visibility, safety, and
-        operational efficiency - built specifically for ports, TERSUS, and TUKS.
+        A complete AIS and CCTV platform to enhance visibility, security, and
+        operational efficiency in ports, TERSUS, and TUKS.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

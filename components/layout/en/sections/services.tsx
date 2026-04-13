@@ -13,15 +13,13 @@ const serviceList: ServiceProps[] = [
   {
     icon: "Satellite",
     title: "AIS Receiver",
-    description:
-      "Reliable AMEC R150GE AIS Receiver with industrial.",
+    description: "Reliable AMEC R150GE AIS Receiver with industrial.",
     image: "/ais-receiver.png",
   },
   {
     icon: "Cctv",
     title: "PTZ CCTV, NVR",
-    description:
-      "Day & Night PTZ CCTV for ports monitoring.",
+    description: "Day & Night PTZ CCTV for ports monitoring.",
     image: "/cctv.png",
   },
   {
@@ -62,13 +60,13 @@ export const ServicesSection = () => {
           {serviceList.map(({ icon, title, description, image }, index) => (
             <Card
               key={title}
-              className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
+              className="bg-muted/50 hover:bg-background transition-all delay-75 group/number"
             >
               <div className="overflow-hidden rounded-t-lg h-40 relative">
                 <img
                   src={image}
                   alt={title}
-                  className="w-full h-full object-cover  transition-opacity duration-300 group-hover:opacity-60"
+                  className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-60"
                 />
               </div>
 
