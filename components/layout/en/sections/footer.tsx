@@ -53,32 +53,41 @@ export const FooterSection = () => {
 
       <div className="max-w-5xl mx-auto px-4">
         <div className="p-8 md:p-10 bg-card border border-secondary rounded-2xl space-y-8">
-          <div>
-            <Link href="/" className="flex items-center gap-3">
-              <Image
-                src="/logo-integrasea-black.png"
-                alt="IntegraSea Logo"
-                width={160}
-                height={40}
-                className="h-8 w-auto object-contain"
-              />
-            </Link>
-          </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo-integrasea-black.png"
+              alt="Integrasea Logo"
+              width={160}
+              height={40}
+              className="h-8 w-auto object-contain"
+            />
+          </Link>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 text-sm">
-            <div className="flex flex-col gap-2">
-              <h3 className="font-semibold text-base">Contact</h3>
-              <p className="opacity-80">
-                Contact us for consultation and more information about our
-                solutions.
-              </p>
+            {/* Product By */}
+            <div className="flex flex-col gap-3">
+              <p className="text-sm text-muted-foreground">Product by</p>
+
+              <div className="flex items-center gap-3">
+                <img
+                  src="/mitg.png"
+                  alt="Multiintegra"
+                  className="h-[50px] object-contain"
+                />
+                <img
+                  src="/iso.png"
+                  alt="ISO"
+                  className="h-[50px] object-contain opacity-80"
+                />
+              </div>
             </div>
 
+            {/* Address */}
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Address</p>
                 <p className="opacity-80">
-                  Taman Berdikari Sentosa B-1D,
+                  Taman Berdikari Sentosa B-1D
                   <br />
                   Jl. Pemuda, East Jakarta 13220
                 </p>
@@ -95,6 +104,7 @@ export const FooterSection = () => {
               </div>
             </div>
 
+            {/* Contact */}
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Email</p>
@@ -107,11 +117,11 @@ export const FooterSection = () => {
               </div>
 
               <div>
-                <p className="font-semibold">Working Hours</p>
+                <p className="font-semibold">Office Hours</p>
                 <p className="opacity-80">
                   Monday - Friday
                   <br />
-                  09.00 - 18.00
+                  09:00 AM - 06:00 PM (WIB)
                 </p>
               </div>
             </div>
