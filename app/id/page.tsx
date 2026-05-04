@@ -5,7 +5,7 @@ import { HeroSection } from "@/components/layout/id/sections/hero";
 import { PricingSection } from "@/components/layout/id/sections/pricing";
 import { ServicesSection } from "@/components/layout/id/sections/services";
 import { SponsorsSection } from "@/components/layout/id/sections/sponsors";
-import { TestimonialSection } from "@/components/layout/id/sections/testimonial";
+import { GallerySection } from "@/components/layout/id/sections/gallery";
 
 export const metadata = {
   title: "Integrasea - Platform Pemantauan AIS & CCTV",
@@ -45,7 +45,7 @@ export default function HomeId() {
       <SponsorsSection />
       <ServicesSection />
       <FeaturesSection />
-      <TestimonialSection />
+      <GallerySection />
       <PricingSection />
       <FAQSection />
       <FooterSection />

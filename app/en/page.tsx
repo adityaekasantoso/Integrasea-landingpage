@@ -5,7 +5,7 @@ import { HeroSection } from "@/components/layout/en/sections/hero";
 import { PricingSection } from "@/components/layout/en/sections/pricing";
 import { ServicesSection } from "@/components/layout/en/sections/services";
 import { SponsorsSection } from "@/components/layout/en/sections/sponsors";
-import { TestimonialSection } from "@/components/layout/en/sections/testimonial";
+import { GallerySection } from "@/components/layout/en/sections/gallery";
 
 export const metadata = {
   title: "Integrasea - AIS & CCTV Monitoring Platform",
@@ -45,7 +45,7 @@ export default function HomeEn() {
       <SponsorsSection />
       <ServicesSection />
       <FeaturesSection />
-      <TestimonialSection />
+      <GallerySection />
       <PricingSection />
       <FAQSection />
       <FooterSection />
