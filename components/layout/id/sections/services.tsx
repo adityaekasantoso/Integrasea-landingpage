@@ -1,3 +1,6 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { icons } from "lucide-react";
@@ -7,6 +10,7 @@ interface ServiceProps {
   title: string;
   description: string;
   image: string;
+  route: string;
 }
 
 const serviceList: ServiceProps[] = [
@@ -16,12 +20,14 @@ const serviceList: ServiceProps[] = [
     description:
       "AIS Receiver AMEC R150GE yang andal dengan setandar industrial.",
     image: "/ais-receiver.png",
+    route: "/services/ais-receiver",
   },
   {
     icon: "Cctv",
     title: "PTZ CCTV & NVR",
     description: "PTZ CCTV siang & malam untuk pemantauan pelabuhan.",
     image: "/cctv.png",
+    route: "/services/cctv-nvr",
   },
   {
     icon: "Eye",
@@ -29,6 +35,7 @@ const serviceList: ServiceProps[] = [
     description:
       "CCTV dengan jangkauan hingga 10 NM untuk keamanan dan pengawasan lebih maksimal.",
     image: "/long-range-cctv.png",
+    route: "/services/long-range-cctv",
   },
   {
     icon: "Unplug",
@@ -36,6 +43,7 @@ const serviceList: ServiceProps[] = [
     description:
       "Integrasi mulus dengan I-Motion DJPL tanpa biaya langganan tambahan.",
     image: "/i-motion.png",
+    route: "/services/i-motion",
   },
 ];
 
@@ -58,40 +66,50 @@ export const ServicesSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-4 w-full">
-          {serviceList.map(({ icon, title, description, image }, index) => (
-            <Card
-              key={title}
-              className="bg-muted/50 hover:bg-background transition-all delay-75 group/number"
-            >
-              <div className="overflow-hidden rounded-t-lg h-40 relative">
-                <img
-                  src={image}
-                  alt={title}
-                  className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-60"
-                />
-              </div>
-
-              <CardHeader>
-                <div className="flex justify-between">
-                  <Icon
-                    name={icon as keyof typeof icons}
-                    size={32}
-                    color="currentColor"
-                    className="mb-6 text-primary"
+          {serviceList.map(
+            ({ icon, title, description, image, route }, index) => (
+              <Card
+                key={title}
+                className="bg-muted/50 hover:bg-background transition-all delay-75 group/number overflow-hidden"
+              >
+                <div className="overflow-hidden rounded-t-lg h-40 relative">
+                  <img
+                    src={image}
+                    alt={title}
+                    className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:opacity-60"
                   />
-                  <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
-                    0{index + 1}
-                  </span>
                 </div>
 
-                <CardTitle>{title}</CardTitle>
-              </CardHeader>
+                <CardHeader>
+                  <div className="flex justify-between">
+                    <Icon
+                      name={icon as keyof typeof icons}
+                      size={32}
+                      color="currentColor"
+                      className="mb-6 text-primary"
+                    />
 
-              <CardContent className="text-muted-foreground">
-                {description}
-              </CardContent>
-            </Card>
-          ))}
+                    <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
+                      0{index + 1}
+                    </span>
+                  </div>
+
+                  <CardTitle>{title}</CardTitle>
+                </CardHeader>
+
+                <CardContent className="text-muted-foreground space-y-4">
+                  <p>{description}</p>
+
+                  <Button
+                    className="w-full"
+                    onClick={() => (window.location.href = route)}
+                  >
+                    Lihat Detail
+                  </Button>
+                </CardContent>
+              </Card>
+            ),
+          )}
         </div>
       </div>
     </section>
